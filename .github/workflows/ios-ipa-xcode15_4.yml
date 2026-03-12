@@ -30,7 +30,12 @@ jobs:
 
       - name: Select Xcode
         run: |
-          sudo xcode-select -s /Applications/Xcode.app
+          CANDIDATE="$(ls -d /Applications/Xcode*.app 2>/dev/null | grep -E 'Xcode_(1[6-9]|[2-9][0-9])' | sort -V | tail -n 1)"
+          if [ -z "$CANDIDATE" ]; then
+            CANDIDATE="/Applications/Xcode.app"
+          fi
+          sudo xcode-select -s "$CANDIDATE/Contents/Developer"
+          echo "Using Xcode at: $CANDIDATE"
           xcodebuild -version
 
       - name: Resolve CocoaPods (if Podfile exists)
