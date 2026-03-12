@@ -99,7 +99,7 @@ public class ImagePrefetcher: CustomStringConvertible {
     // A manager used for prefetching. We will use the helper methods in manager.
     private let manager: KingfisherManager
 
-    private let prefetchQueue = DispatchQueue(label: "com.onevcat.Kingfisher.ImagePrefetcher.prefetchQueue")
+    private let pretchQueue = DispatchQueue(label: "com.onevcat.Kingfisher.ImagePrefetcher.pretchQueue")
     private static let requestingQueue = DispatchQueue(label: "com.onevcat.Kingfisher.ImagePrefetcher.requestingQueue")
 
     private var finished: Bool {
@@ -263,7 +263,7 @@ public class ImagePrefetcher: CustomStringConvertible {
         // We want all callbacks from our prefetch queue, so we should ignore the callback queue in options.
         // Add our own callback dispatch queue to make sure all internal callbacks are
         // coming back in our expected queue.
-        options.callbackQueue = .dispatch(prefetchQueue)
+        options.callbackQueue = .dispatch(pretchQueue)
         optionsInfo = options
 
         let cache = optionsInfo.targetCache ?? .default
@@ -275,7 +275,7 @@ public class ImagePrefetcher: CustomStringConvertible {
     /// of assets that are required for later use in an app. This code will not try and update any UI
     /// with the results of the process.
     public func start() {
-        prefetchQueue.async {
+        pretchQueue.async {
             guard !self.stopped else {
                 assertionFailure("You can not restart the same prefetcher. Try to create a new prefetcher.")
                 self.handleComplete()
@@ -303,9 +303,9 @@ public class ImagePrefetcher: CustomStringConvertible {
         }
     }
 
-    /// Stops current downloading progress, and cancel any future prefetching activity that might be occurring.
+    /// Stops current downloading progress, and cancel any future prefetching activity that might be occuring.
     public func stop() {
-        prefetchQueue.async {
+        pretchQueue.async {
             if self.finished { return }
             self.stopped = true
             self.tasks.values.forEach { $0.cancel() }
@@ -409,8 +409,8 @@ public class ImagePrefetcher: CustomStringConvertible {
     
     private func reportCompletionOrStartNext() {
         if let resource = self.pendingSources.popFirst() {
-            // Loose call stack for huge amount of sources.
-            prefetchQueue.async { self.startPrefetching(resource) }
+            // Loose call stack for huge ammount of sources.
+            pretchQueue.async { self.startPrefetching(resource) }
         } else {
             guard allFinished else { return }
             self.handleComplete()

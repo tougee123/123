@@ -27,6 +27,10 @@
 
 你只需选择 `configuration`（默认 `Release`）。
 
+可选：
+- `package_mode = unsigned`：无需证书/描述文件，生成未签名 IPA（仅用于编译验证）
+- `package_mode = signed`：需要完整签名 secrets，生成可安装分发 IPA
+
 ## 5. iOS 12 注意点
 - 项目内 `IPHONEOS_DEPLOYMENT_TARGET` 必须 <= `12.0`
 - 三方依赖必须支持 iOS 12

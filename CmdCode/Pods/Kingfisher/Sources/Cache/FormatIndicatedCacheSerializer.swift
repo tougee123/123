@@ -26,11 +26,6 @@
 
 import Foundation
 import CoreGraphics
-#if os(macOS)
-import AppKit
-#else
-import UIKit
-#endif
 
 /// `FormatIndicatedCacheSerializer` lets you indicate an image format for serialized caches.
 ///

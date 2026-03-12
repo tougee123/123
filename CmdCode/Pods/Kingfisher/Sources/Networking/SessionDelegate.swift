@@ -47,7 +47,6 @@ open class SessionDelegate: NSObject {
     private let lock = NSLock()
 
     let onValidStatusCode = Delegate<Int, Bool>()
-    let onResponseReceived = Delegate<(URLResponse, (URLSession.ResponseDisposition) -> Void), Void>()
     let onDownloadingFinished = Delegate<(URL, Result<URLResponse, KingfisherError>), Void>()
     let onDidDownloadData = Delegate<SessionDataTask, Data?>()
 
@@ -92,6 +91,7 @@ open class SessionDelegate: NSObject {
 
     func append(
         _ task: SessionDataTask,
+        url: URL,
         callback: SessionDataTask.TaskCallback) -> DownloadTask
     {
         let token = task.addCallback(callback)
@@ -105,7 +105,6 @@ open class SessionDelegate: NSObject {
         guard let url = task.originalURL else {
             return
         }
-        task.removeAllCallbacks()
         tasks[url] = nil
     }
 
@@ -170,15 +169,7 @@ extension SessionDelegate: URLSessionDataDelegate {
             completionHandler(.cancel)
             return
         }
-
-        let inspectedHandler: (URLSession.ResponseDisposition) -> Void = { disposition in
-            if disposition == .cancel {
-                let error = KingfisherError.responseError(reason: .cancelledByDelegate(response: response))
-                self.onCompleted(task: dataTask, result: .failure(error))
-            }
-            completionHandler(disposition)
-        }
-        onResponseReceived.call((response, inspectedHandler))
+        completionHandler(.allow)
     }
 
     open func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
@@ -265,7 +256,7 @@ extension SessionDelegate: URLSessionDataDelegate {
         guard let sessionTask = self.task(for: task) else {
             return
         }
-        sessionTask.onTaskDone.call((result, sessionTask.callbacks))
         remove(sessionTask)
+        sessionTask.onTaskDone.call((result, sessionTask.callbacks))
     }
 }

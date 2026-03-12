@@ -122,13 +122,11 @@ public enum DiskStorage {
         ///   - key: The key to which the `value` will be stored. If there is already a value under the key,
         ///          the old value will be overwritten by `value`.
         ///   - expiration: The expiration policy used by this store action.
-        ///   - writeOptions: Data writing options used the new files.
         /// - Throws: An error during converting the value to a data format or during writing it to disk.
         public func store(
             value: T,
             forKey key: String,
-            expiration: StorageExpiration? = nil,
-            writeOptions: Data.WritingOptions = []) throws
+            expiration: StorageExpiration? = nil) throws
         {
             guard storageReady else {
                 throw KingfisherError.cacheError(reason: .diskStorageIsNotReady(cacheURL: directoryURL))
@@ -147,23 +145,11 @@ public enum DiskStorage {
 
             let fileURL = cacheFileURL(forKey: key)
             do {
-                try data.write(to: fileURL, options: writeOptions)
+                try data.write(to: fileURL)
             } catch {
-                if error.isFolderMissing {
-                    // The whole cache folder is deleted. Try to recreate it and write file again.
-                    do {
-                        try prepareDirectory()
-                        try data.write(to: fileURL, options: writeOptions)
-                    } catch {
-                        throw KingfisherError.cacheError(
-                            reason: .cannotCreateCacheFile(fileURL: fileURL, key: key, data: data, error: error)
-                        )
-                    }
-                } else {
-                    throw KingfisherError.cacheError(
-                        reason: .cannotCreateCacheFile(fileURL: fileURL, key: key, data: data, error: error)
-                    )
-                }
+                throw KingfisherError.cacheError(
+                    reason: .cannotCreateCacheFile(fileURL: fileURL, key: key, data: data, error: error)
+                )
             }
 
             let now = Date()
@@ -395,7 +381,7 @@ public enum DiskStorage {
         /// - Returns: The URLs for removed files.
         ///
         /// - Note: This method checks `config.sizeLimit` and remove cached files in an LRU (Least Recently Used) way.
-        public func removeSizeExceededValues() throws -> [URL] {
+        func removeSizeExceededValues() throws -> [URL] {
 
             if config.sizeLimit == 0 { return [] } // Back compatible. 0 means no limit.
 
@@ -467,19 +453,17 @@ extension DiskStorage {
 
         /// Default is `false`
         /// If set to `true`, image extension will be extracted from original file name and append to
-        /// the hashed file name and used as the cache key on disk.
+        /// the hased file name and used as the cache key on disk.
         public var autoExtAfterHashedFileName = false
-        
-        /// Closure that takes in initial directory path and generates
-        /// the final disk cache path. You can use it to fully customize your cache path.
-        public var cachePathBlock: ((_ directory: URL, _ cacheName: String) -> URL)! = {
-            (directory, cacheName) in
-            return directory.appendingPathComponent(cacheName, isDirectory: true)
-        }
 
         let name: String
         let fileManager: FileManager
         let directory: URL?
+
+        var cachePathBlock: ((_ directory: URL, _ cacheName: String) -> URL)! = {
+            (directory, cacheName) in
+            return directory.appendingPathComponent(cacheName, isDirectory: true)
+        }
 
         /// Creates a config value based on given parameters.
         ///
@@ -596,21 +580,5 @@ extension DiskStorage {
             cacheName = "com.onevcat.Kingfisher.ImageCache.\(config.name)"
             directoryURL = config.cachePathBlock(url, cacheName)
         }
-    }
-}
-
-fileprivate extension Error {
-    var isFolderMissing: Bool {
-        let nsError = self as NSError
-        guard nsError.domain == NSCocoaErrorDomain, nsError.code == 4 else {
-            return false
-        }
-        guard let underlyingError = nsError.userInfo[NSUnderlyingErrorKey] as? NSError else {
-            return false
-        }
-        guard underlyingError.domain == NSPOSIXErrorDomain, underlyingError.code == 2 else {
-            return false
-        }
-        return true
     }
 }
