@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		102B55C22E3021FD3AF5A3DA /* 飞鹰机枪扫射WDD-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7528C8C03E6D46949BB338C0 /* 飞鹰机枪扫射WDD-表情版.gif */; };
+		23B0EA3587B2338EF3C88343 /* Pods_CmdCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C89CFF4F144AE74D1316244 /* Pods_CmdCode.framework */; };
+		2458BD1552106EDDC52E7313 /* 补给背包SASWWS-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4D1D31C9C52B0E3776B9044E /* 补给背包SASWWS-表情版.gif */; };
+		3321C91363BE59ECD5C37F8A /* 轨道加特林火力网DSAWW-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 46A32A370C8A5D58A879866E /* 轨道加特林火力网DSAWW-表情版.gif */; };
+		340F4D64EF4488C266CF66A3 /* error.wav in Resources */ = {isa = PBXBuildFile; fileRef = AAEB4482F70BFCCC27FCC1E5 /* error.wav */; };
+		3D678245CACADD452E0D8958 /* 轨道380MM高爆弹火力网DSWWASS-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE288D9F6646CB23BDB6D6FF /* 轨道380MM高爆弹火力网DSWWASS-表情版.gif */; };
+		3F67F55C6B0D856F7913CC09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE8C254B4DC175AFD8B6A29 /* AppDelegate.swift */; };
+		40FF55561B1B60EF27302A7E /* tone.wav in Resources */ = {isa = PBXBuildFile; fileRef = EC6960D5029EF1EAD26B15DA /* tone.wav */; };
+		4F98ED79C75A73AF23D580AD /* 飞鹰110MM火箭巢WDWA-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = EBF444D50F01D2EF58012035 /* 飞鹰110MM火箭巢WDWA-表情版.gif */; };
+		50F0011BB05B3BEA08B43E42 /* 轨道激光炮DSWDS-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = AEA9D3CF2840D3B60351A94C /* 轨道激光炮DSWDS-表情版.gif */; };
+		588376C99A9618FDA6187C94 /* 反器材步枪SADWS-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = AFB68316AC38F99022F1C798 /* 反器材步枪SADWS-表情版.gif */; };
+		5CC37F55A60C023AF053D101 /* 加特林哨戒炮SWDA-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 20D8119AB25C9D4D6211D21A /* 加特林哨戒炮SWDA-表情版.gif */; };
+		6C69BEAE98D127094B308A47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E6DA8969E029DF504FE7F58 /* Assets.xcassets */; };
+		6CC5E3475C1E44D271A4825A /* success.wav in Resources */ = {isa = PBXBuildFile; fileRef = A81F14D5C8FC405EAB49EC2C /* success.wav */; };
+		7538C3D808638F5C7EE8EC11 /* CMDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0855D79B11B266E3613D0C /* CMDManager.swift */; };
+		7BF62967C2AB6D48DAFE3A25 /* 无后坐力步枪SADDA-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 853A74411117E1FA6D9C67E1 /* 无后坐力步枪SADDA-表情版.gif */; };
+		7D709A56704610F93F2FC9B7 /* 盟友SASWWA-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 32CDD8A03D638445C2E4265F /* 盟友SASWWA-表情版.gif */; };
+		8909D759C69C31E90D2895DB /* 地狱火背包SDWWW-息屏版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 777E2433ADD4C2D7BF293C04 /* 地狱火背包SDWWW-息屏版.gif */; };
+		895160B56C1941521E74178E /* 重新补给SSWD-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = AE3A43622047565DEABD1567 /* 重新补给SSWD-表情版.gif */; };
+		8C477F760095085AB726730D /* 哨戒机枪SWDDW-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1A27FDF777CFAE01D150E038 /* 哨戒机枪SWDDW-表情版.gif */; };
+		907D5EEA6624D8DDCF6F3435 /* 飞鹰集束炸弹WDSSD-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = EE5664642ED99E5EC8681DAD /* 飞鹰集束炸弹WDSSD-表情版.gif */; };
+		90EDECF59C6FB1337BE8D551 /* 地狱火炸弹SWASWDSW-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 40480CE0B3287347CC3E5DEA /* 地狱火炸弹SWASWDSW-表情版.gif */; };
+		AF31D97CD1FEEAC5AC73CDA3 /* 反步兵雷区SAWD-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8BD2BAB8F53F294D490EA2C9 /* 反步兵雷区SAWD-表情版.gif */; };
+		B48BB9A5214C579754F0BF68 /* SOS信标WSDW-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 31A840120C88DCFD02EE236B /* SOS信标WSDW-表情版.gif */; };
+		B9940F1FD19A6862E51BAD72 /* 磁轨炮SDSWAD-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 91029273A42BDF25DBC5E7AA /* 磁轨炮SDSWAD-表情版.gif */; };
+		BA7D499E8A00DA111F8D4AEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D11A36E89DB6E4977E79DE0 /* ViewController.swift */; };
+		BD4C51379721E64A6D1FBFDF /* 轨道120MM高爆弹火力网DDSADS.gif in Resources */ = {isa = PBXBuildFile; fileRef = DD7E9A8EC45D77D4E705A27D /* 轨道120MM高爆弹火力网DDSADS.gif */; };
+		CE542848CA3A465D5085F149 /* 飞鹰500KG炸弹WDSSS-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8D9D88971A8CD38722B5324E /* 飞鹰500KG炸弹WDSSS-表情版.gif */; };
+		D3C0FBC5987A04A56EE5D3E7 /* 迫击哨戒炮SWDDS-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = EAEE773D5446D47CEA28B00B /* 迫击哨戒炮SWDDS-表情版.gif */; };
+		D5C255599D8E9FE3C59C4E89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD28C13C5473D5E407A568D /* LaunchScreen.storyboard */; };
+		DCAA7E51321F735BA85B871D /* 重机枪部署支架SWADDA-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2A139218461ED3B0B9BA0045 /* 重机枪部署支架SWADDA-表情版.gif */; };
+		DFCE906FD6569B1ACCFBA73A /* 飞鹰空袭WDSD-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7AD64C7499592B976CCC9916 /* 飞鹰空袭WDSD-表情版.gif */; };
+		F3CC1FCC825CB00C29FBAC22 /* 增援WSDAW-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4E436294E18A05B8758805FF /* 增援WSDAW-表情版.gif */; };
+		FE660DE6F9317E49ECD1762C /* 喷射背包SWWSW-表情版.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7ED1370F070C26B235F49830 /* 喷射背包SWWSW-表情版.gif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E6DA8969E029DF504FE7F58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A27FDF777CFAE01D150E038 /* 哨戒机枪SWDDW-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "哨戒机枪SWDDW-表情版.gif"; sourceTree = "<group>"; };
+		20D8119AB25C9D4D6211D21A /* 加特林哨戒炮SWDA-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "加特林哨戒炮SWDA-表情版.gif"; sourceTree = "<group>"; };
+		2A139218461ED3B0B9BA0045 /* 重机枪部署支架SWADDA-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "重机枪部署支架SWADDA-表情版.gif"; sourceTree = "<group>"; };
+		2D11A36E89DB6E4977E79DE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31A840120C88DCFD02EE236B /* SOS信标WSDW-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "SOS信标WSDW-表情版.gif"; sourceTree = "<group>"; };
+		32CDD8A03D638445C2E4265F /* 盟友SASWWA-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "盟友SASWWA-表情版.gif"; sourceTree = "<group>"; };
+		40480CE0B3287347CC3E5DEA /* 地狱火炸弹SWASWDSW-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "地狱火炸弹SWASWDSW-表情版.gif"; sourceTree = "<group>"; };
+		46A32A370C8A5D58A879866E /* 轨道加特林火力网DSAWW-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "轨道加特林火力网DSAWW-表情版.gif"; sourceTree = "<group>"; };
+		4D1D31C9C52B0E3776B9044E /* 补给背包SASWWS-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "补给背包SASWWS-表情版.gif"; sourceTree = "<group>"; };
+		4E436294E18A05B8758805FF /* 增援WSDAW-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "增援WSDAW-表情版.gif"; sourceTree = "<group>"; };
+		5C89CFF4F144AE74D1316244 /* Pods_CmdCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CmdCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7528C8C03E6D46949BB338C0 /* 飞鹰机枪扫射WDD-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "飞鹰机枪扫射WDD-表情版.gif"; sourceTree = "<group>"; };
+		777E2433ADD4C2D7BF293C04 /* 地狱火背包SDWWW-息屏版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "地狱火背包SDWWW-息屏版.gif"; sourceTree = "<group>"; };
+		7AD64C7499592B976CCC9916 /* 飞鹰空袭WDSD-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "飞鹰空袭WDSD-表情版.gif"; sourceTree = "<group>"; };
+		7ED1370F070C26B235F49830 /* 喷射背包SWWSW-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "喷射背包SWWSW-表情版.gif"; sourceTree = "<group>"; };
+		80010B0334981572B17E7C51 /* Pods-CmdCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CmdCode.release.xcconfig"; path = "Target Support Files/Pods-CmdCode/Pods-CmdCode.release.xcconfig"; sourceTree = "<group>"; };
+		853A74411117E1FA6D9C67E1 /* 无后坐力步枪SADDA-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "无后坐力步枪SADDA-表情版.gif"; sourceTree = "<group>"; };
+		8BD2BAB8F53F294D490EA2C9 /* 反步兵雷区SAWD-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "反步兵雷区SAWD-表情版.gif"; sourceTree = "<group>"; };
+		8D9D88971A8CD38722B5324E /* 飞鹰500KG炸弹WDSSS-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "飞鹰500KG炸弹WDSSS-表情版.gif"; sourceTree = "<group>"; };
+		91029273A42BDF25DBC5E7AA /* 磁轨炮SDSWAD-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "磁轨炮SDSWAD-表情版.gif"; sourceTree = "<group>"; };
+		9D0855D79B11B266E3613D0C /* CMDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMDManager.swift; sourceTree = "<group>"; };
+		A81F14D5C8FC405EAB49EC2C /* success.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = success.wav; sourceTree = "<group>"; };
+		AAEB4482F70BFCCC27FCC1E5 /* error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = error.wav; sourceTree = "<group>"; };
+		AE3A43622047565DEABD1567 /* 重新补给SSWD-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "重新补给SSWD-表情版.gif"; sourceTree = "<group>"; };
+		AEA9D3CF2840D3B60351A94C /* 轨道激光炮DSWDS-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "轨道激光炮DSWDS-表情版.gif"; sourceTree = "<group>"; };
+		AFB68316AC38F99022F1C798 /* 反器材步枪SADWS-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "反器材步枪SADWS-表情版.gif"; sourceTree = "<group>"; };
+		B55F1DDCB72808A55A0896A3 /* Pods-CmdCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CmdCode.debug.xcconfig"; path = "Target Support Files/Pods-CmdCode/Pods-CmdCode.debug.xcconfig"; sourceTree = "<group>"; };
+		BE288D9F6646CB23BDB6D6FF /* 轨道380MM高爆弹火力网DSWWASS-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "轨道380MM高爆弹火力网DSWWASS-表情版.gif"; sourceTree = "<group>"; };
+		CDFB71D62F4B42FC007A2526 /* CmdCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CmdCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCE8C254B4DC175AFD8B6A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD7E9A8EC45D77D4E705A27D /* 轨道120MM高爆弹火力网DDSADS.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "轨道120MM高爆弹火力网DDSADS.gif"; sourceTree = "<group>"; };
+		EAEE773D5446D47CEA28B00B /* 迫击哨戒炮SWDDS-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "迫击哨戒炮SWDDS-表情版.gif"; sourceTree = "<group>"; };
+		EBF444D50F01D2EF58012035 /* 飞鹰110MM火箭巢WDWA-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "飞鹰110MM火箭巢WDWA-表情版.gif"; sourceTree = "<group>"; };
+		EC6960D5029EF1EAD26B15DA /* tone.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tone.wav; sourceTree = "<group>"; };
+		EE5664642ED99E5EC8681DAD /* 飞鹰集束炸弹WDSSD-表情版.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "飞鹰集束炸弹WDSSD-表情版.gif"; sourceTree = "<group>"; };
+		FDD28C13C5473D5E407A568D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDFB71D32F4B42FC007A2526 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B0EA3587B2338EF3C88343 /* Pods_CmdCode.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		321EADDF2EFE19BC2E89B53C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C89CFF4F144AE74D1316244 /* Pods_CmdCode.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E76D13411EA5A55765F4284 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B55F1DDCB72808A55A0896A3 /* Pods-CmdCode.debug.xcconfig */,
+				80010B0334981572B17E7C51 /* Pods-CmdCode.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		96207B65AE1B4E2ADD0447EF /* gifs */ = {
+			isa = PBXGroup;
+			children = (
+				31A840120C88DCFD02EE236B /* SOS信标WSDW-表情版.gif */,
+				20D8119AB25C9D4D6211D21A /* 加特林哨戒炮SWDA-表情版.gif */,
+				AFB68316AC38F99022F1C798 /* 反器材步枪SADWS-表情版.gif */,
+				8BD2BAB8F53F294D490EA2C9 /* 反步兵雷区SAWD-表情版.gif */,
+				1A27FDF777CFAE01D150E038 /* 哨戒机枪SWDDW-表情版.gif */,
+				7ED1370F070C26B235F49830 /* 喷射背包SWWSW-表情版.gif */,
+				40480CE0B3287347CC3E5DEA /* 地狱火炸弹SWASWDSW-表情版.gif */,
+				777E2433ADD4C2D7BF293C04 /* 地狱火背包SDWWW-息屏版.gif */,
+				4E436294E18A05B8758805FF /* 增援WSDAW-表情版.gif */,
+				853A74411117E1FA6D9C67E1 /* 无后坐力步枪SADDA-表情版.gif */,
+				32CDD8A03D638445C2E4265F /* 盟友SASWWA-表情版.gif */,
+				91029273A42BDF25DBC5E7AA /* 磁轨炮SDSWAD-表情版.gif */,
+				4D1D31C9C52B0E3776B9044E /* 补给背包SASWWS-表情版.gif */,
+				DD7E9A8EC45D77D4E705A27D /* 轨道120MM高爆弹火力网DDSADS.gif */,
+				BE288D9F6646CB23BDB6D6FF /* 轨道380MM高爆弹火力网DSWWASS-表情版.gif */,
+				46A32A370C8A5D58A879866E /* 轨道加特林火力网DSAWW-表情版.gif */,
+				AEA9D3CF2840D3B60351A94C /* 轨道激光炮DSWDS-表情版.gif */,
+				EAEE773D5446D47CEA28B00B /* 迫击哨戒炮SWDDS-表情版.gif */,
+				AE3A43622047565DEABD1567 /* 重新补给SSWD-表情版.gif */,
+				2A139218461ED3B0B9BA0045 /* 重机枪部署支架SWADDA-表情版.gif */,
+				EBF444D50F01D2EF58012035 /* 飞鹰110MM火箭巢WDWA-表情版.gif */,
+				8D9D88971A8CD38722B5324E /* 飞鹰500KG炸弹WDSSS-表情版.gif */,
+				7528C8C03E6D46949BB338C0 /* 飞鹰机枪扫射WDD-表情版.gif */,
+				7AD64C7499592B976CCC9916 /* 飞鹰空袭WDSD-表情版.gif */,
+				EE5664642ED99E5EC8681DAD /* 飞鹰集束炸弹WDSSD-表情版.gif */,
+			);
+			path = gifs;
+			sourceTree = "<group>";
+		};
+		CDFB71CD2F4B42FC007A2526 = {
+			isa = PBXGroup;
+			children = (
+				F1C73F04FAD3FAFD00F8E520 /* CmdCode */,
+				CDFB71D72F4B42FC007A2526 /* Products */,
+				7E76D13411EA5A55765F4284 /* Pods */,
+				321EADDF2EFE19BC2E89B53C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDFB71D72F4B42FC007A2526 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDFB71D62F4B42FC007A2526 /* CmdCode.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1C73F04FAD3FAFD00F8E520 /* CmdCode */ = {
+			isa = PBXGroup;
+			children = (
+				DCE8C254B4DC175AFD8B6A29 /* AppDelegate.swift */,
+				2D11A36E89DB6E4977E79DE0 /* ViewController.swift */,
+				9D0855D79B11B266E3613D0C /* CMDManager.swift */,
+				0E6DA8969E029DF504FE7F58 /* Assets.xcassets */,
+				FDD28C13C5473D5E407A568D /* LaunchScreen.storyboard */,
+				AAEB4482F70BFCCC27FCC1E5 /* error.wav */,
+				A81F14D5C8FC405EAB49EC2C /* success.wav */,
+				EC6960D5029EF1EAD26B15DA /* tone.wav */,
+				96207B65AE1B4E2ADD0447EF /* gifs */,
+			);
+			path = CmdCode;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDFB71D52F4B42FC007A2526 /* CmdCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDFB71E92F4B42FE007A2526 /* Build configuration list for PBXNativeTarget "CmdCode" */;
+			buildPhases = (
+				9FB001CA0A6F2C60AD71D43E /* [CP] Check Pods Manifest.lock */,
+				CDFB71D22F4B42FC007A2526 /* Sources */,
+				CDFB71D32F4B42FC007A2526 /* Frameworks */,
+				CDFB71D42F4B42FC007A2526 /* Resources */,
+				7973338B9CE956585BFCDA28 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CmdCode;
+			productName = CmdCode;
+			productReference = CDFB71D62F4B42FC007A2526 /* CmdCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDFB71CE2F4B42FC007A2526 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					CDFB71D52F4B42FC007A2526 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CDFB71D12F4B42FC007A2526 /* Build configuration list for PBXProject "CmdCode" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDFB71CD2F4B42FC007A2526;
+			productRefGroup = CDFB71D72F4B42FC007A2526 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDFB71D52F4B42FC007A2526 /* CmdCode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDFB71D42F4B42FC007A2526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C69BEAE98D127094B308A47 /* Assets.xcassets in Resources */,
+				D5C255599D8E9FE3C59C4E89 /* LaunchScreen.storyboard in Resources */,
+				340F4D64EF4488C266CF66A3 /* error.wav in Resources */,
+				6CC5E3475C1E44D271A4825A /* success.wav in Resources */,
+				40FF55561B1B60EF27302A7E /* tone.wav in Resources */,
+				B48BB9A5214C579754F0BF68 /* SOS信标WSDW-表情版.gif in Resources */,
+				5CC37F55A60C023AF053D101 /* 加特林哨戒炮SWDA-表情版.gif in Resources */,
+				588376C99A9618FDA6187C94 /* 反器材步枪SADWS-表情版.gif in Resources */,
+				AF31D97CD1FEEAC5AC73CDA3 /* 反步兵雷区SAWD-表情版.gif in Resources */,
+				8C477F760095085AB726730D /* 哨戒机枪SWDDW-表情版.gif in Resources */,
+				FE660DE6F9317E49ECD1762C /* 喷射背包SWWSW-表情版.gif in Resources */,
+				90EDECF59C6FB1337BE8D551 /* 地狱火炸弹SWASWDSW-表情版.gif in Resources */,
+				8909D759C69C31E90D2895DB /* 地狱火背包SDWWW-息屏版.gif in Resources */,
+				F3CC1FCC825CB00C29FBAC22 /* 增援WSDAW-表情版.gif in Resources */,
+				7BF62967C2AB6D48DAFE3A25 /* 无后坐力步枪SADDA-表情版.gif in Resources */,
+				7D709A56704610F93F2FC9B7 /* 盟友SASWWA-表情版.gif in Resources */,
+				B9940F1FD19A6862E51BAD72 /* 磁轨炮SDSWAD-表情版.gif in Resources */,
+				2458BD1552106EDDC52E7313 /* 补给背包SASWWS-表情版.gif in Resources */,
+				BD4C51379721E64A6D1FBFDF /* 轨道120MM高爆弹火力网DDSADS.gif in Resources */,
+				3D678245CACADD452E0D8958 /* 轨道380MM高爆弹火力网DSWWASS-表情版.gif in Resources */,
+				3321C91363BE59ECD5C37F8A /* 轨道加特林火力网DSAWW-表情版.gif in Resources */,
+				50F0011BB05B3BEA08B43E42 /* 轨道激光炮DSWDS-表情版.gif in Resources */,
+				D3C0FBC5987A04A56EE5D3E7 /* 迫击哨戒炮SWDDS-表情版.gif in Resources */,
+				895160B56C1941521E74178E /* 重新补给SSWD-表情版.gif in Resources */,
+				DCAA7E51321F735BA85B871D /* 重机枪部署支架SWADDA-表情版.gif in Resources */,
+				4F98ED79C75A73AF23D580AD /* 飞鹰110MM火箭巢WDWA-表情版.gif in Resources */,
+				CE542848CA3A465D5085F149 /* 飞鹰500KG炸弹WDSSS-表情版.gif in Resources */,
+				102B55C22E3021FD3AF5A3DA /* 飞鹰机枪扫射WDD-表情版.gif in Resources */,
+				DFCE906FD6569B1ACCFBA73A /* 飞鹰空袭WDSD-表情版.gif in Resources */,
+				907D5EEA6624D8DDCF6F3435 /* 飞鹰集束炸弹WDSSD-表情版.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7973338B9CE956585BFCDA28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CmdCode/Pods-CmdCode-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CmdCode/Pods-CmdCode-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CmdCode/Pods-CmdCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FB001CA0A6F2C60AD71D43E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CmdCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDFB71D22F4B42FC007A2526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F67F55C6B0D856F7913CC09 /* AppDelegate.swift in Sources */,
+				BA7D499E8A00DA111F8D4AEB /* ViewController.swift in Sources */,
+				7538C3D808638F5C7EE8EC11 /* CMDManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CDFB71EA2F4B42FE007A2526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B55F1DDCB72808A55A0896A3 /* Pods-CmdCode.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KY588L6S9Y;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CmdCode/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paul.CmdCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CDFB71EB2F4B42FE007A2526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80010B0334981572B17E7C51 /* Pods-CmdCode.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KY588L6S9Y;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CmdCode/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paul.CmdCode;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CDFB71EC2F4B42FE007A2526 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KY588L6S9Y;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDFB71ED2F4B42FE007A2526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KY588L6S9Y;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDFB71D12F4B42FC007A2526 /* Build configuration list for PBXProject "CmdCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFB71EC2F4B42FE007A2526 /* Debug */,
+				CDFB71ED2F4B42FE007A2526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDFB71E92F4B42FE007A2526 /* Build configuration list for PBXNativeTarget "CmdCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDFB71EA2F4B42FE007A2526 /* Debug */,
+				CDFB71EB2F4B42FE007A2526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDFB71CE2F4B42FC007A2526 /* Project object */;
+}

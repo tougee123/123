@@ -1,0 +1,9 @@
+.DS_Store
+build-ci/
+build/
+zip_extract/
+CmdCode_20260317_fixed.zip
+CmdCode_20260317/CmdCode.xcodeproj/xcuserdata/
+CmdCode_20260317/CmdCode.xcworkspace/xcuserdata/
+CmdCode_20260317/CmdCode.xcodeproj/project.xcworkspace/xcuserdata/
+CmdCode_20260317/Pods/Pods.xcodeproj/xcuserdata/
